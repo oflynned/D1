@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  13 NOV 2015 18:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  13 NOV 2015 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,47 +424,132 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
- [3] [4] [5] [6]
+ [3] [4]
+<a1_circuit.jpg, id=37, 290.58563pt x 224.33812pt>
+File: a1_circuit.jpg Graphic file (type jpg)
+ <use a1_circuit.jpg>
+Package pdftex.def Info: a1_circuit.jpg used on input line 221.
+(pdftex.def)             Requested size: 193.47578pt x 149.36781pt.
+File: a1_circuit.jpg Graphic file (type jpg)
+
+<use a1_circuit.jpg>
+Package pdftex.def Info: a1_circuit.jpg used on input line 221.
+(pdftex.def)             Requested size: 193.47578pt x 149.36781pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[5 <./a1_circuit.jpg>] <A1.png, id=42, 1437.11906pt x 684.30656pt>
+File: A1.png Graphic file (type png)
+
+<use A1.png>
+Package pdftex.def Info: A1.png used on input line 251.
+(pdftex.def)             Requested size: 483.69687pt x 230.32222pt.
+File: A1.png Graphic file (type png)
+ <use A1.png>
+Package pdftex.def Info: A1.png used on input line 251.
+(pdftex.def)             Requested size: 483.69687pt x 230.32222pt.
+ [6 <./A1.png>]
+<a2_circuit.png, id=48, 365.86688pt x 158.84344pt>
+File: a2_circuit.png Graphic file (type png)
+ <use a2_circuit.png>
+Package pdftex.def Info: a2_circuit.png used on input line 269.
+(pdftex.def)             Requested size: 290.22107pt x 126.00847pt.
+File: a2_circuit.png Graphic file (type png)
+
+<use a2_circuit.png>
+Package pdftex.def Info: a2_circuit.png used on input line 269.
+(pdftex.def)             Requested size: 290.22107pt x 126.00847pt.
+ <b_circuit.jpg, id=49, 343.2825pt x 296.60812pt>
+File: b_circuit.jpg Graphic file (type jpg)
+
+<use b_circuit.jpg>
+Package pdftex.def Info: b_circuit.jpg used on input line 302.
+(pdftex.def)             Requested size: 290.22107pt x 250.76033pt.
+File: b_circuit.jpg Graphic file (type jpg)
+ <use b_circuit.jpg>
+Package pdftex.def Info: b_circuit.jpg used on input line 302.
+(pdftex.def)             Requested size: 290.22107pt x 250.76033pt.
+ [7 <./a2_circuit.png>]
+<b1ii.PNG, id=53, 1437.87187pt x 687.31781pt>
+File: b1ii.PNG Graphic file (type png)
+ <use b1ii.PNG>
+Package pdftex.def Info: b1ii.PNG used on input line 331.
+(pdftex.def)             Requested size: 483.69687pt x 231.20988pt.
+File: b1ii.PNG Graphic file (type png)
+ <use b1ii.PNG>
+Package pdftex.def Info: b1ii.PNG used on input line 331.
+(pdftex.def)             Requested size: 483.69687pt x 231.20988pt.
+
+[8 <./b_circuit.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<c_times.png, id=57, 239.805pt x 118.5885pt>
+File: c_times.png Graphic file (type png)
+ <use c_times.png>
+Package pdftex.def Info: c_times.png used on input line 378.
+(pdftex.def)             Requested size: 241.84843pt x 119.60152pt.
+File: c_times.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use c_times.png>
+Package pdftex.def Info: c_times.png used on input line 378.
+(pdftex.def)             Requested size: 241.84843pt x 119.60152pt.
+ [9 <./b1ii.PNG>] <c1.PNG, id=63, 1437.11906pt x 679.78969pt>
+File: c1.PNG Graphic file (type png)
 
+<use c1.PNG>
+Package pdftex.def Info: c1.PNG used on input line 384.
+(pdftex.def)             Requested size: 362.77264pt x 171.59627pt.
+ <c2.PNG, id=64, 1440.13031pt x 683.55376pt>
+File: c2.PNG Graphic file (type png)
+ <use c2.PNG>
+Package pdftex.def Info: c2.PNG used on input line 384.
+(pdftex.def)             Requested size: 362.77264pt x 172.18135pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<c3.PNG, id=65, 1437.11906pt x 682.04813pt>
+File: c3.PNG Graphic file (type png)
+ <use c3.PNG>
+Package pdftex.def Info: c3.PNG used on input line 384.
+(pdftex.def)             Requested size: 362.77264pt x 172.16635pt.
+File: c1.PNG Graphic file (type png)
+ <use c1.PNG>
+Package pdftex.def Info: c1.PNG used on input line 384.
+(pdftex.def)             Requested size: 362.77264pt x 171.59627pt.
+File: c2.PNG Graphic file (type png)
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8] [9] [10] (./d1.aux) ) 
+<use c2.PNG>
+Package pdftex.def Info: c2.PNG used on input line 384.
+(pdftex.def)             Requested size: 362.77264pt x 172.18135pt.
+File: c3.PNG Graphic file (type png)
+ <use c3.PNG>
+Package pdftex.def Info: c3.PNG used on input line 384.
+(pdftex.def)             Requested size: 362.77264pt x 172.16635pt.
+ [10 <./c_times.png>] [11 <./c1.PNG> <./c2.PNG> <./c3.PNG>] [12] [13] [14] (./d
+1.aux) ) 
 Here is how much of TeX's memory you used:
- 3275 strings out of 494985
- 45665 string characters out of 6180356
- 132362 words of memory out of 5000000
- 6431 multiletter control sequences out of 15000+600000
+ 3323 strings out of 494985
+ 46288 string characters out of 6180356
+ 128362 words of memory out of 5000000
+ 6468 multiletter control sequences out of 15000+600000
  10466 words of font info for 37 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,12n,23p,566b,253s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti12.pfb>
-Output written on d1.pdf (12 pages, 1003604 bytes).
+ 38i,11n,23p,566b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti12.pfb>
+Output written on d1.pdf (16 pages, 1374256 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

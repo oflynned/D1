@@ -216,24 +216,39 @@ Impurity atoms with 3 valence electrons, also called a \emph{trivalent impurity}
 \subsection{Method}
 \begin{enumerate}
 \item Following instructions in the schematic entry given in the lab book, set the circuit up as the following diagram
-%image
+\begin{align*}
+\includegraphics[width=0.4\textwidth]{a1_circuit.jpg}
+\end{align*}
 \item Using component properties, the following table is to be filled in
 \end{enumerate}
 \begin{table}[h]
 \centering
 \begin{tabular}{ll}
-$\beta_f$  & 296.463  \\
-$\beta_r$  & 0.482 \\
-$\tau_f$  & $2.968x10^{-10}s$      \\
-$\tau_r$  & $3.839x10^{-7}s$        \\
-$C_{jc}$ & $3.194x10^{-11}F$        \\
-$C_{je}$ & $1.099x19^{-11}F$        
+$\beta_f$  & 220  \\
+$\beta_r$  & 4 \\
+$\tau_f$  & $0.325x10^{-9}s$      \\
+$\tau_r$  & $100x10^{-9}s$        \\
+$C_{jc}$ & $9.12x10^{-12}F$        \\
+$C_{je}$ & $2.701x10^{-11}F$        
 \end{tabular}
 \caption{Recorded values for 2N2222A}
 \end{table}
 \subsection{Simulation}
-In  simulation for this, a DC Sweep is used and the output is interpreted as a curved graph with respect to the following specifications:
+In  simulation for this, a DC Sweep is used and the output is interpreted as a curved graph with respect to the following specifications for $V_{BE}$, noting that source two is not in use:
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+Start value 	& 	0.2V  \\
+Stop value  	& 	0.9V   \\
+Increments  	&   0.01V 
+\end{tabular}
+\caption{A1 DC Sweep Values}
+\end{table}
+Also note that $I(V_{CE})$ must be inverted by multiplying by -1 under the configuration settings.
 \subsection{Results}
+\begin{align*}
+\includegraphics[width=1\textwidth]{A1.png}
+\end{align*}
 \begin{table}[h]
 \centering
 \begin{tabular}{ll}
@@ -242,10 +257,16 @@ $V_{be on}$  & 0.669V
 \end{tabular}
 \caption{Recorded values for voltages}
 \end{table}
-In comparison to the lectures, my results are approximately the same as the figures given, therefore 
+In comparison to the lectures, my results are approximately the same as the figures given, therefore they are within a reasonable range of accuracy.
 
 \section{Collector Current vs Collector-Emitter Voltage}
 \subsection{Method}
+\begin{enumerate}
+\item Following instructions in the schematic entry given in the lab book, set the circuit up as the following diagram
+\end{enumerate}
+\begin{align*}
+\includegraphics[width=0.6\textwidth]{a2_circuit.png}
+\end{align*}
 \subsection{Simulation}
 Again as before, a  DC Sweep is performed on the circuit to the following specifications:
 \subsection{Results}
@@ -276,10 +297,38 @@ $V_{ce sat}@I_{C}\approx5mA $ & 0.188V
 \item Ensure that a pulse voltage is used on the base-emitter with a 2N2222A BJT, and another power source on the collector-emitter side.
 \item Two resistors should be in their given places with their respective resistance.
 \end{enumerate}
+\begin{align*}
+\includegraphics[width=0.6\textwidth]{b_circuit.jpg}
+\end{align*}
 \subsection{Simulation}
-In accordance to the image below, pulse voltage is set up as such:
+In accordance to the image below, pulse voltage is set up as such, where any other values are to be set to 0.
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+Initial value & $0V$ \\
+Pulsed value & $5V$ \\
+Delay time & $1 \mu s$ \\
+Rise itme & $0 s$ \\
+Fall time & $0 s$ \\
+Pulse width & $2 \mu s$ \\
+Period & $6 \mu s$
+\end{tabular}
+\caption{Pulse voltage parameters}
+\end{table}
 A DC sweep is performed such that the following analysis parameters are obeyed with the specific variables selected for analysis:
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+Start value & $0V$ \\
+Stop value & $5V$ \\
+Increment & $0.01V$
+\end{tabular}
+\caption{DC sweep parameters}
+\end{table}
 \subsection{Results}
+\begin{align*}
+\includegraphics[width=1\textwidth]{b1ii.PNG}
+\end{align*}
 \begin{table}[h]
 \centering
 \begin{tabular}{ll}
@@ -311,9 +360,28 @@ $V_{IH min}=V_{BE on} + \frac{R_{b}}{\beta_{f}R_{c}}\left[V_{CC}-V_{CE sat}\righ
 Given that the value of $R_c$ is increased by a factor of four...
 \section{Switching Characteristics}
 \subsection{Method}
+Reuse the circuit from B and ensure that the transient analyses have been set up appropriately to the following specifications:
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+Initial conditions	&	Determine automatically\\
+Start time			&	$0s$\\
+End time				&	$6e-006s$\\
+Maximum step time	&	$1e-008s$
+\end{tabular}
+\caption{Transient analysis}
+\end{table}
 \subsection{Simulation}
+Align the cursors to the appropriate areas of the graph as shown in order to retrieve the appropriate values for each section:
+\begin{align*}
+\includegraphics[width=0.5\textwidth]{c_times.png}
+\end{align*}
 \subsection{Results}
-%table 1
+\begin{align*}
+\includegraphics[width=0.75\textwidth]{c1.PNG}\\
+\includegraphics[width=0.75\textwidth]{c2.PNG}\\
+\includegraphics[width=0.75\textwidth]{c3.PNG}
+\end{align*}
 \begin{table}[h]
 \centering
 \begin{tabular}{ll}
@@ -324,29 +392,17 @@ $t_r$ & $0.6216\mu s$
 \end{tabular}
 \caption{Theory v Measured Values}
 \end{table}
-
+Following on values obtained from A1:
 %via values from A1
-\begin{table}[h]
-\centering
-\begin{tabular}{lll}
-$t_d=$ & $R_b\left(C_{je}+C_{jc}\right)In\left[\frac{V_{CC}}{V_{CC}-V_{BE cut-in}}\right]$ & \\
-$t_f=$ & $0.8\beta_F\left(\tau_F+R_cC_{jc}\right)In\left[\frac{\beta_FI_{BF}}{\beta_FI_{BF}-I_{C max}}\right]$ & \\
-$t_s=$ & $\tau_sIn\left[\frac{I_{BF}-I_{BR}}{\frac{I_{C max}{\beta_F}}-I_{BR}}\right]$ & \\
-$t_r=$ & $0.8\beta_F\left(\tau_F+R_CC_{jc}\right)In\left[\frac{\frac{I_C max}{\beta_F}-I_{BR}}{-I_{BR}}\right]$ & 
-\end{tabular}
-\caption{Analytical Approximation Expressions}
-\end{table}
+$$t_d=R_b\left(C_{je}+C_{jc}\right)In\left[\frac{V_{CC}}{V_{CC}-V_{BE cut-in}}\right]=$$
+$$t_f=0.8\beta_F\left(\tau_F+R_cC_{jc}\right)In\left[\frac{\beta_FI_{BF}}{\beta_FI_{BF}-I_{C max}}\right]=$$
+$$t_s=\tau_sIn\left[\frac{I_{BF}-I_{BR}}{\frac{I_{C max}}{\beta_F}-I_{BR}}\right]=$$
+$$t_r=0.8\beta_F\left(\tau_F+R_CC_{jc}\right)In\left[\frac{\frac{I_C max}{\beta_F}-I_{BR}}{-I_{BR}}\right]=$$
 where
-\begin{table}[h]
-\centering
-\begin{tabular}{llll}
-$I_{BF}=$	& $\frac{V_I-V_{BE on}}{R_b}=$	& & \\
-$I_{C max}=$	& $\frac{V_{CC}-V_{CE on}}{R_C}=$	& & \\
-$I_{BR}=$	& $-\frac{V_{BE on}}{R_B}=$	& & \\
-$\tau_s=$	& $\frac{(1-\beta_R)\tau_{BF}+\beta_F\tau_{BR}}{1+\beta_F+\beta_R}=$ &  $\frac{(1+\beta_R)\beta_F\tau_F+\beta_R\beta_F\tau_R}{1+\beta_F+\beta_R}=$	& \\
-\end{tabular}
-\caption{Expanded Replacement Expressions}
-\end{table}
+$$I_{BF}=\frac{V_I-V_{BE on}}{R_b}=$$
+$$I_{C max}=\frac{V_{CC}-V_{CE on}}{R_C}=$$
+$$I_{BR}=-\frac{V_{BE on}}{R_B}=$$
+$$\tau_s=\frac{(1-\beta_R)\tau_{BF}+\beta_F\tau_{BR}}{1+\beta_F+\beta_R}\frac{(1+\beta_R)\beta_F\tau_F+\beta_R\beta_F\tau_R}{1+\beta_F+\beta_R}=$$
 Where the above values having been calculated are input into here:
 %above values go in here
 \begin{table}[h]
@@ -384,10 +440,37 @@ $t_r$ & $0.222\mu s$
 
 %final overall discussion and questions at the end of the report
 \section{Discussion}
-Discussion
+\begin{itemize}
+\item A1 - Collector Current against Base-Emitter Voltage
+\begin{itemize}
+\item How do the values of $V_{be cut in}$ and $V_{be on}$ compare with those in lectures?
+\end{itemize}
+\item B - Resistively Loaded BJT Inverter Transfer Characteristics
+\begin{itemize}
+\item Compare these measurements with calculations from theory and previous device measurements.
+\begin{itemize}
+\item 1
+\end{itemize}
+\item Predict what will happen is $R_C$ is increased from $1k\Omega$ to $4k\Omega$.
+\begin{itemize}
+\item 1
+\end{itemize}
+\end{itemize}
+\item C - BJT Inverter - Switching Characteristics
+\begin{itemize}
+\item Predict what will happen is $R_B$ is reduced to $5k\Omega$.
+\item Predict what will happen is $R_C$ is increased to $4k\Omega$.
+\end{itemize}
+\item Sources of error
+\begin{itemize}
+\item As my results are not entirely equivalent to results shown in the lecture notes, they have a certain degree of error in them due to approximations and eyeballing.
+\item Slopes from the graphs were over a range of tiered edges, and so rather than viewing a single point at which change started, I had to approximate the point at which enough change had happened in order to deem it as entering a new stage of voltage.
+\end{itemize}
+\end{itemize}
 \section{Conclusion}
-Conclusion
-\section{Issues for Consideration}
+\subsection{Findings}
+Overall my results were approximately close to the actual values within the lecture notes. On comparison to values that one would expect to find for such circuitry, my results, albeit with slight error, were within a reasonable tolerance and weren't far from actual values that an electronic engineer would expect to find in a non-ideal environmental situation.
+\subsection{Issues for Consideration}
 \begin{enumerate}
   \item \textbf{What are the limitations on the accuracy of your results?} \hfill \\
   MultiSim is a development environment that does not take in environmental factors into account, therefore the values acquired here are absolute under perfect circumstances. In real life, the actual values may differ due to slight differences in manufacture per component, environmental temperature, and so forth.
@@ -408,7 +491,5 @@ Conclusion
   \item \textbf{What is the role of the Electronic Engineer in this regard?} \hfill \\
   The electronic engineer must understand a deep level of circuitry in order to accurately build a circuit that functions as required. This also entails a lot of testing such that, within an environment such as MultiSim, that everything works as intended and limits are observed.
 \end{enumerate}
-
 \clearpage
-
 \end{document}
