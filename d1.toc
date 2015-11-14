@@ -18,14 +18,14 @@
 \contentsline {subsection}{\numberline {4.1}Method}{7}
 \contentsline {subsection}{\numberline {4.2}Simulation}{7}
 \contentsline {subsection}{\numberline {4.3}Results}{7}
-\contentsline {section}{\numberline {5}Resistively Loaded Transfer Characteristics}{7}
-\contentsline {subsection}{\numberline {5.1}Method}{7}
+\contentsline {section}{\numberline {5}Resistively Loaded Transfer Characteristics}{8}
+\contentsline {subsection}{\numberline {5.1}Method}{8}
 \contentsline {subsection}{\numberline {5.2}Simulation}{8}
 \contentsline {subsection}{\numberline {5.3}Results}{9}
 \contentsline {section}{\numberline {6}Switching Characteristics}{9}
 \contentsline {subsection}{\numberline {6.1}Method}{9}
 \contentsline {subsection}{\numberline {6.2}Simulation}{10}
-\contentsline {subsection}{\numberline {6.3}Results}{11}
+\contentsline {subsection}{\numberline {6.3}Results}{10}
 \contentsline {section}{\numberline {7}Discussion}{12}
 \contentsline {section}{\numberline {8}Conclusion}{13}
 \contentsline {subsection}{\numberline {8.1}Findings}{13}

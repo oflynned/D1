@@ -187,8 +187,7 @@ Impurity atoms with 3 valence electrons, also called a \emph{trivalent impurity}
 \end{itemize}
 \item $V_{ce}$:
 \begin{itemize}
-%needs more, why is it useful?
-\item This is the voltage that resides in the collector-emitter region of a bipolar junction transistor.*****
+\item This is the voltage that resides in the collector-emitter region of a bipolar junction transistor.
 \end{itemize}
 \item $V_{ol}$:
 \begin{itemize}
@@ -269,6 +268,20 @@ In comparison to the lectures, my results are approximately the same as the figu
 \end{align*}
 \subsection{Simulation}
 Again as before, a  DC Sweep is performed on the circuit to the following specifications:
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+$V_{CE}$			&	\\
+Start value		&$0V$\\
+Stop value		&$6V$\\
+Increment		&$0.05V$\\
+$I_{B}$			&\\
+Start value		&$1e-005AV$\\
+Stop value		&$0.0001A$\\
+Increment		&$1e-005A$
+\end{tabular}
+\caption{DC sweep parameters for analysis}
+\end{table}
 \subsection{Results}
 Using the following formula, $I_C=\beta_FI_B$, the forward gain ($\beta_F$) can be found for various values.
 \begin{table}[h]
@@ -349,15 +362,6 @@ $V_{IH min}=V_{BE on} + \frac{R_{b}}{\beta_{f}R_{c}}\left[V_{CC}-V_{CE sat}\righ
 \end{tabular}
 \caption{Theory v Measured Values}
 \end{table}
-
-\begin{itemize}
-\item Predict what will happen if $R_c$ is increased from $1k\Omega$ to $4k\Omega$
-\begin{itemize}
-\item If...therefore...
-\end{itemize}
-\end{itemize}
-
-Given that the value of $R_c$ is increased by a factor of four...
 \section{Switching Characteristics}
 \subsection{Method}
 Reuse the circuit from B and ensure that the transient analyses have been set up appropriately to the following specifications:
@@ -377,9 +381,14 @@ Align the cursors to the appropriate areas of the graph as shown in order to ret
 \includegraphics[width=0.5\textwidth]{c_times.png}
 \end{align*}
 \subsection{Results}
+The following are the resulting graphs for $R_b=20k\Omega$, $R_{b}=5k\Omega$, and $R_{c}=4k\Omega$; noting the change in slopes for each subsequent value.
 \begin{align*}
-\includegraphics[width=0.75\textwidth]{c1.PNG}\\
-\includegraphics[width=0.75\textwidth]{c2.PNG}\\
+\includegraphics[width=0.75\textwidth]{c1.PNG}
+\end{align*}
+\begin{align*}
+\includegraphics[width=0.75\textwidth]{c2.PNG}
+\end{align*}
+\begin{align*}
 \includegraphics[width=0.75\textwidth]{c3.PNG}
 \end{align*}
 \begin{table}[h]
@@ -394,29 +403,26 @@ $t_r$ & $0.6216\mu s$
 \end{table}
 Following on values obtained from A1:
 %via values from A1
-$$t_d=R_b\left(C_{je}+C_{jc}\right)In\left[\frac{V_{CC}}{V_{CC}-V_{BE cut-in}}\right]=$$
-$$t_f=0.8\beta_F\left(\tau_F+R_cC_{jc}\right)In\left[\frac{\beta_FI_{BF}}{\beta_FI_{BF}-I_{C max}}\right]=$$
-$$t_s=\tau_sIn\left[\frac{I_{BF}-I_{BR}}{\frac{I_{C max}}{\beta_F}-I_{BR}}\right]=$$
-$$t_r=0.8\beta_F\left(\tau_F+R_CC_{jc}\right)In\left[\frac{\frac{I_C max}{\beta_F}-I_{BR}}{-I_{BR}}\right]=$$
+$$t_d=R_b\left(C_{je}+C_{jc}\right)In\left[\frac{V_{CC}}{V_{CC}-V_{BE cut-in}}\right]=8.746x10^{-8}s$$
+$$t_f=0.8\beta_F\left(\tau_F+R_cC_{jc}\right)In\left[\frac{\beta_FI_{BF}}{\beta_FI_{BF}-I_{C max}}\right]=1.418x10^{-7}s$$
+$$t_s=\tau_sIn\left[\frac{I_{BF}-I_{BR}}{\frac{I_{C max}}{\beta_F}-I_{BR}}\right]=1.351x10^{-7}s$$
+$$t_r=0.8\beta_F\left(\tau_F+R_CC_{jc}\right)In\left[\frac{\frac{I_C max}{\beta_F}-I_{BR}}{-I_{BR}}\right]=1.239x10^{-6}s$$
 where
-$$I_{BF}=\frac{V_I-V_{BE on}}{R_b}=$$
-$$I_{C max}=\frac{V_{CC}-V_{CE on}}{R_C}=$$
-$$I_{BR}=-\frac{V_{BE on}}{R_B}=$$
-$$\tau_s=\frac{(1-\beta_R)\tau_{BF}+\beta_F\tau_{BR}}{1+\beta_F+\beta_R}\frac{(1+\beta_R)\beta_F\tau_F+\beta_R\beta_F\tau_R}{1+\beta_F+\beta_R}=$$
-Where the above values having been calculated are input into here:
-%above values go in here
-\begin{table}[h]
+$$I_{BF}=\frac{V_I-V_{BE on}}{R_b}=2.658x10^-4A$$
+$$I_{C max}=\frac{V_{CC}-V_{CE on}}{R_C}=4.936x10^{-3}A$$
+$$I_{BR}=-\frac{V_{BE on}}{R_B}=-5.7x10^{-4}A$$
+$$\tau_s=\frac{(1-\beta_R)\tau_{BF}+\beta_F\tau_{BR}}{1+\beta_F+\beta_R}=\frac{(1+\beta_R)\beta_F\tau_F+\beta_R\beta_F\tau_R}{1+\beta_F+\beta_R}=3.927x10^-{-7}s$$
+\begin{table}[!h]
 \centering
 \begin{tabular}{ll}
-$t_d$ & $\mu s$\\
-$t_f$ & $\mu s$\\
-$t_s$ & $\mu s$\\
-$t_r$ & $\mu s$
+$t_d$ & $8.746x10^{-8}s$\\
+$t_f$ & $1.418x10^{-7}s$\\
+$t_s$ & $1.351x10^{-7}s$\\
+$t_r$ & $1.239x10^{-6}s$
 \end{tabular}
-\caption{Theory v Measured Values}
+\caption{Theory v Measured Values from equations}
 \end{table}
-The following table represents a change of $R_b$ to $5k\Omega$
-\begin{table}[h]
+\begin{table}[!h]
 \centering
 \begin{tabular}{ll}
 $t_d$ & $0.02\mu s$\\
@@ -424,10 +430,9 @@ $t_f$ & $0.036\mu s$\\
 $t_s$ & $0.26\mu s$\\
 $t_r$ & $0.2\mu s$
 \end{tabular}
-\caption{Theory v Measured Values}
+\caption{Measured Values of $R_b$ to $5k\Omega$}
 \end{table}
-The following table represents a change of $R_c$ to $4k\Omega$
-\begin{table}[h]
+\begin{table}[!h]
 \centering
 \begin{tabular}{ll}
 $t_d$ & $0.01\mu s$\\
@@ -435,31 +440,42 @@ $t_f$ & $0.032\mu s$\\
 $t_s$ & $0.23\mu s$\\
 $t_r$ & $0.222\mu s$
 \end{tabular}
-\caption{Theory v Measured Values}
+\caption{Measured Values of $R_c$ to $4k\Omega$}
 \end{table}
 
-%final overall discussion and questions at the end of the report
 \section{Discussion}
 \begin{itemize}
 \item A1 - Collector Current against Base-Emitter Voltage
 \begin{itemize}
 \item How do the values of $V_{be cut in}$ and $V_{be on}$ compare with those in lectures?
+\begin{itemize}
+\item Saturation occurs when the Base-Emitter region reaches a maximum under conditions of bias having been reached. Therefore, as current increases with voltage, at this point, the voltage will be higher than that of $V_{be on}$. With respect to lectures, the values are within range of reasonable tolerance.
+\end{itemize}
 \end{itemize}
 \item B - Resistively Loaded BJT Inverter Transfer Characteristics
 \begin{itemize}
 \item Compare these measurements with calculations from theory and previous device measurements.
 \begin{itemize}
-\item 1
+\item $V_{OH}=V_{CC}=5.88V-5V=0.88V$ difference
+\item $V_{OL}=V_{CE sat}=0.319V-0.3V=0.019V$ difference
+\item $V_{IL max}=V_{BE cut in}=0.6V-0.582V=0.018V$ difference
+\item $V_{IH min}=V_{BE on} + \frac{R_{b}}{\beta_{f}R_{c}}\left[V_{CC}-V_{CE sat}\right]=1.232V-1.2V=0.032V$ difference
 \end{itemize}
 \item Predict what will happen is $R_C$ is increased from $1k\Omega$ to $4k\Omega$.
 \begin{itemize}
-\item 1
+\item Reducing $R_b$ causes the slops of the graph of the input vs output voltage to increase and therefore causes an increase in $V_{OL}$.
 \end{itemize}
 \end{itemize}
 \item C - BJT Inverter - Switching Characteristics
 \begin{itemize}
 \item Predict what will happen is $R_B$ is reduced to $5k\Omega$.
+\begin{itemize}
+\item Increasing $R_c$ does the opposite of increasing $R_b$, and therefore increases $V_{OL}$.
+\end{itemize}
 \item Predict what will happen is $R_C$ is increased to $4k\Omega$.
+\begin{itemize}
+\item Increasing $R_c$ does the opposite of increasing $R_b$ and therefore increases the slope and lowers $V_{OL}$.
+\end{itemize}
 \end{itemize}
 \item Sources of error
 \begin{itemize}
